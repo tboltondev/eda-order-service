@@ -3,7 +3,11 @@ plugins {
 }
 
 group = "dev.tombolton"
-version = "0.0.1-SNAPSHOT"
+version = "unspecified"
+
+repositories {
+    mavenCentral()
+}
 
 java {
     toolchain {
@@ -11,14 +15,7 @@ java {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web:3.4.4")
-    implementation("org.springframework.boot:spring-boot-starter-validation:3.4.4")
-    implementation(project(":domain"))
     compileOnly("org.projectlombok:lombok:1.18.38")
     annotationProcessor("org.projectlombok:lombok:1.18.38")
 
