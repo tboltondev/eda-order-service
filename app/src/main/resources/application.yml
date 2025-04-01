@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "eda-order-service"
+  profiles:
+    default: "local"
+---
+spring:
+  config:
+    activate:
+      on-profile: "local"
