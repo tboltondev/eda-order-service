@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CreateOrderController {
-    @PostMapping("/order")
+    @PostMapping("/v1/order")
     public static void createOrder(@Valid @RequestBody OrderRequestDTO orderRequest) {
         System.out.println(orderRequest);
     }
